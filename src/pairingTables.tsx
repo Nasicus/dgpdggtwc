@@ -1,11 +1,11 @@
-﻿import React, { FC, Fragment } from "react";
+﻿import { FC, Fragment } from "react";
 import { Table } from "@mantine/core";
 
 export const PairingTables: FC = () => {
   return (
     <>
       <PairingsTable
-        name="Gruppe 1"
+        name="Group 1"
         pairings={[
           "Skyfall",
           "Funny Cats",
@@ -19,7 +19,7 @@ export const PairingTables: FC = () => {
       />
 
       <PairingsTable
-        name="Gruppe 2"
+        name="Group 2"
         pairings={[
           "Raven",
           "Darwin",
@@ -32,7 +32,7 @@ export const PairingTables: FC = () => {
         ]}
       />
       <PairingsTable
-        name="Gruppe 3"
+        name="Group 3"
         pairings={[
           "Bender! & FancyBear",
           "SeaFire",
@@ -46,7 +46,7 @@ export const PairingTables: FC = () => {
       />
 
       <PairingsTable
-        name="Gruppe 4"
+        name="Group 4"
         pairings={[
           "Rivendell",
           "Isotopes",
@@ -79,7 +79,7 @@ const PairingsTable: FC<{ pairings: string[]; name: string }> = ({
             <Fragment key={week}>
               <Table.Tr>
                 <Table.Td colSpan={2}>
-                  <strong>Woche {week + 1}</strong>
+                  <strong>Week {week + 1}</strong>
                 </Table.Td>
               </Table.Tr>
               {/*<td>{JSON.stringify(pairing.map(p => [p.homeTeam, p.foreignTeam, ""]), null, 2)}</td> */}

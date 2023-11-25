@@ -42,7 +42,7 @@ export const GroupEditor: FC<{
                 value={team.name}
                 data={selectableTeams}
                 searchable
-                nothingFound="No teams found"
+                nothingFoundMessage="No teams found"
                 onChange={(v) =>
                   setGroup((g) => ({
                     ...g,
@@ -70,7 +70,7 @@ export const GroupEditor: FC<{
               placeholder="Add team"
               data={selectableTeams}
               searchable
-              nothingFound="No teams found"
+              nothingFoundMessage="No teams found"
               onChange={(v) => {
                 if (group.teams.find((t) => t.name === v)) return;
                 setGroup((g) => ({ ...g, teams: [...g.teams, { name: v }] }));

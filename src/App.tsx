@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import { FC } from "react";
 import "./App.css";
 import { PairingTables } from "./pairingTables.tsx";
 import { GroupResults } from "./groupResults.tsx";

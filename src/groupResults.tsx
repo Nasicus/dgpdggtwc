@@ -1,4 +1,4 @@
-﻿import React, { FC } from "react";
+﻿import { FC } from "react";
 import { Table } from "@mantine/core";
 import classes from "./groupResult.module.css";
 
@@ -13,8 +13,15 @@ export const GroupResults: FC = () => {
   );
 };
 
+type WeekNumber = string;
+type HomeTeam = string;
+type ForeignTeam = string;
+type Ratio = string;
+
+type Group = Array<[WeekNumber, Array<[HomeTeam, ForeignTeam, Ratio]>]>;
+
 const Group1ResultTable: FC = () => {
-  const group1 = [
+  const group1: Group = [
     [
       "Week 1",
       [
@@ -83,13 +90,13 @@ const Group1ResultTable: FC = () => {
   return (
     <GroupResultTable
       groupResult={calculateGroupResults(group1)}
-      groupName="Gruppe 1"
+      groupName="Group 1"
     />
   );
 };
 
 const Group2ResultTable: FC = () => {
-  const group2 = [
+  const group2: Group = [
     [
       "Week 1",
       [
@@ -158,13 +165,13 @@ const Group2ResultTable: FC = () => {
   return (
     <GroupResultTable
       groupResult={calculateGroupResults(group2)}
-      groupName="Gruppe 2"
+      groupName="Group 2"
     />
   );
 };
 
 const Group3ResultTable: FC = () => {
-  const group3 = [
+  const group3: Group = [
     [
       "Week 1",
       [
@@ -233,13 +240,13 @@ const Group3ResultTable: FC = () => {
   return (
     <GroupResultTable
       groupResult={calculateGroupResults(group3)}
-      groupName="Gruppe 3"
+      groupName="Group 3"
     />
   );
 };
 
 const Group4ResultTable: FC = () => {
-  const group4 = [
+  const group4: Group = [
     [
       "Week 1",
       [
@@ -308,7 +315,7 @@ const Group4ResultTable: FC = () => {
   return (
     <GroupResultTable
       groupResult={calculateGroupResults(group4)}
-      groupName="Gruppe 4"
+      groupName="Group 4"
     />
   );
 };
@@ -317,17 +324,19 @@ function getQualifiedClassName(i: number) {
   return i < 4 ? classes.qualified : undefined;
 }
 
+type GroupResult = {
+  [team: string]: {
+    matches: number;
+    wins: number;
+    losses: number;
+    points: number;
+    wonAgainst: string[];
+  };
+};
+
 const GroupResultTable: FC<{
   groupName: string;
-  groupResult: {
-    [team: string]: {
-      matches: number;
-      wins: number;
-      losses: number;
-      points: number;
-      wonAgainst: string[];
-    };
-  };
+  groupResult: GroupResult;
 }> = ({ groupName, groupResult }) => {
   const sortedGroupNames = Object.keys(groupResult).sort(
     (groupAName, groupBName) => {
@@ -422,11 +431,11 @@ const GroupResultTable: FC<{
   );
 };
 
-function calculateGroupResults(group: any) {
+function calculateGroupResults(group: Group) {
   return group.reduce((table, teamResults) => {
     teamResults[1].forEach((teamResult) => {
-      const homeTeam = teamResult[0] as string;
-      const foreignTeam = teamResult[1] as string;
+      const homeTeam = teamResult[0];
+      const foreignTeam = teamResult[1];
 
       function ensureTeam(teamName: string) {
         if (table[teamName]) {
@@ -445,7 +454,7 @@ function calculateGroupResults(group: any) {
       ensureTeam(homeTeam);
       ensureTeam(foreignTeam);
 
-      const ratios = (teamResult[2] as string)
+      const ratios = teamResult[2]
         .replace(/\s+/g, "")
         .split(":")
         .map((p) => parseInt(p));
@@ -481,5 +490,5 @@ function calculateGroupResults(group: any) {
     });
 
     return table;
-  }, {} as any);
+  }, {} as GroupResult);
 }
