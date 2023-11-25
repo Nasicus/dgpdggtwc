@@ -1,5 +1,6 @@
 ﻿import React, { FC } from "react";
 import { Table } from "@mantine/core";
+import classes from "./groupResult.module.css";
 
 export const GroupResults: FC = () => {
   return (
@@ -312,6 +313,10 @@ const Group4ResultTable: FC = () => {
   );
 };
 
+function getQualifiedClassName(i: number) {
+  return i < 4 ? classes.qualified : undefined;
+}
+
 const GroupResultTable: FC<{
   groupName: string;
   groupResult: {
@@ -380,10 +385,14 @@ const GroupResultTable: FC<{
             </Table.Tr>
           </Table.Thead>
           <Table.Tbody>
-            {sortedGroupNames.map((teamName) => (
+            {sortedGroupNames.map((teamName, i) => (
               <Table.Tr key={teamName}>
-                <Table.Td>{teamName}</Table.Td>
-                <Table.Td>{groupResult[teamName].matches}</Table.Td>
+                <Table.Td className={getQualifiedClassName(i)}>
+                  {teamName}
+                </Table.Td>
+                <Table.Td className={getQualifiedClassName(i)}>
+                  {groupResult[teamName].matches}
+                </Table.Td>
               </Table.Tr>
             ))}
           </Table.Tbody>
@@ -396,10 +405,12 @@ const GroupResultTable: FC<{
             </Table.Tr>
           </Table.Thead>
           <Table.Tbody>
-            {sortedGroupNames.map((teamName) => (
+            {sortedGroupNames.map((teamName, i) => (
               <Table.Tr key={teamName}>
-                <Table.Td>{groupResult[teamName].points}</Table.Td>
-                <Table.Td>
+                <Table.Td className={getQualifiedClassName(i)}>
+                  {groupResult[teamName].points}
+                </Table.Td>
+                <Table.Td className={getQualifiedClassName(i)}>
                   {groupResult[teamName].wins}:{groupResult[teamName].losses}
                 </Table.Td>
               </Table.Tr>
