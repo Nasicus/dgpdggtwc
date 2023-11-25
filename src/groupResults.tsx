@@ -327,8 +327,8 @@ function getQualifiedClassName(i: number) {
 type GroupResult = {
   [team: string]: {
     matches: number;
-    wins: number;
-    losses: number;
+    gamesWon: number;
+    gamesLost: number;
     points: number;
     wonAgainst: string[];
   };
@@ -351,8 +351,8 @@ const GroupResultTable: FC<{
         return 1;
       }
 
-      const groupARatio = groupAResult.wins - groupAResult.losses;
-      const groupBRatio = groupBResult.wins - groupBResult.losses;
+      const groupARatio = groupAResult.gamesWon - groupAResult.gamesLost;
+      const groupBRatio = groupBResult.gamesWon - groupBResult.gamesLost;
 
       if (groupARatio > groupBRatio) {
         return -1;
@@ -420,7 +420,8 @@ const GroupResultTable: FC<{
                   {groupResult[teamName].points}
                 </Table.Td>
                 <Table.Td className={getQualifiedClassName(i)}>
-                  {groupResult[teamName].wins}:{groupResult[teamName].losses}
+                  {groupResult[teamName].gamesWon}:
+                  {groupResult[teamName].gamesLost}
                 </Table.Td>
               </Table.Tr>
             ))}
@@ -444,8 +445,8 @@ function calculateGroupResults(group: Group) {
 
         table[teamName] = {
           matches: 0,
-          wins: 0,
-          losses: 0,
+          gamesWon: 0,
+          gamesLost: 0,
           points: 0,
           wonAgainst: [],
         };
@@ -466,22 +467,17 @@ function calculateGroupResults(group: Group) {
       function addWeekResult(
         teamName: string,
         otherTeamName: string,
-        wins: number,
-        losses: number,
+        gamesWon: number,
+        gamesLost: number,
       ) {
         table[teamName].matches += 1;
-        table[teamName].wins += wins;
-        table[teamName].losses += losses;
+        table[teamName].gamesWon += gamesWon;
+        table[teamName].gamesLost += gamesLost;
 
-        const didWin = wins > losses;
+        if (gamesWon > gamesLost) {
+          table[teamName].points += 1;
 
-        table[teamName].points += didWin ? 1 : 0;
-
-        if (didWin) {
-          table[teamName].wonAgainst = [
-            ...table[teamName].wonAgainst,
-            otherTeamName,
-          ];
+          table[teamName].wonAgainst.push(otherTeamName);
         }
       }
 
