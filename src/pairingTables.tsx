@@ -1,4 +1,5 @@
 ﻿import React, { FC, Fragment } from "react";
+import { Table } from "@mantine/core";
 
 export const PairingTables: FC = () => {
   return (
@@ -72,29 +73,29 @@ const PairingsTable: FC<{ pairings: string[]; name: string }> = ({
       <h3>
         {name} ({pairings.length}er)
       </h3>
-      <table>
-        <tbody>
+      <Table>
+        <Table.Tbody>
           {calculatedPairings.map((pairing, week) => (
             <Fragment key={week}>
-              <tr>
-                <td colSpan={2}>
+              <Table.Tr>
+                <Table.Td colSpan={2}>
                   <strong>Woche {week + 1}</strong>
-                </td>
-              </tr>
+                </Table.Td>
+              </Table.Tr>
               {/*<td>{JSON.stringify(pairing.map(p => [p.homeTeam, p.foreignTeam, ""]), null, 2)}</td> */}
               {pairing.map((p, i) => (
-                <tr key={i}>
-                  <td>{p.homeTeam}</td>
-                  <td>{p.foreignTeam}</td>
-                </tr>
+                <Table.Tr key={i}>
+                  <Table.Td>{p.homeTeam}</Table.Td>
+                  <Table.Td>{p.foreignTeam}</Table.Td>
+                </Table.Tr>
               ))}
-              <tr>
-                <td colSpan={2}>&nbsp;</td>
-              </tr>
+              <Table.Tr>
+                <Table.Td colSpan={2}>&nbsp;</Table.Td>
+              </Table.Tr>
             </Fragment>
           ))}
-        </tbody>
-      </table>
+        </Table.Tbody>
+      </Table>
       JSON:
       <pre>
         {JSON.stringify(

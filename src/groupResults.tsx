@@ -1,4 +1,5 @@
 ﻿import React, { FC } from "react";
+import { Table } from "@mantine/core";
 
 export const GroupResults: FC = () => {
   return (
@@ -371,40 +372,40 @@ const GroupResultTable: FC<{
     <>
       <h3>{groupName}</h3>
       <div style={{ display: "flex" }}>
-        <table>
-          <thead>
-            <tr>
-              <td>Team</td>
-              <td># Matches</td>
-            </tr>
-          </thead>
-          <tbody>
+        <Table>
+          <Table.Thead>
+            <Table.Tr>
+              <Table.Td>Team</Table.Td>
+              <Table.Td># Matches</Table.Td>
+            </Table.Tr>
+          </Table.Thead>
+          <Table.Tbody>
             {sortedGroupNames.map((teamName) => (
-              <tr key={teamName}>
-                <td>{teamName}</td>
-                <td>{groupResult[teamName].matches}</td>
-              </tr>
+              <Table.Tr key={teamName}>
+                <Table.Td>{teamName}</Table.Td>
+                <Table.Td>{groupResult[teamName].matches}</Table.Td>
+              </Table.Tr>
             ))}
-          </tbody>
-        </table>
-        <table>
-          <thead>
-            <tr>
-              <td>Points</td>
-              <td>Ratio</td>
-            </tr>
-          </thead>
-          <tbody>
+          </Table.Tbody>
+        </Table>
+        <Table>
+          <Table.Thead>
+            <Table.Tr>
+              <Table.Td>Points</Table.Td>
+              <Table.Td>Ratio</Table.Td>
+            </Table.Tr>
+          </Table.Thead>
+          <Table.Tbody>
             {sortedGroupNames.map((teamName) => (
-              <tr key={teamName}>
-                <td>{groupResult[teamName].points}</td>
-                <td>
+              <Table.Tr key={teamName}>
+                <Table.Td>{groupResult[teamName].points}</Table.Td>
+                <Table.Td>
                   {groupResult[teamName].wins}:{groupResult[teamName].losses}
-                </td>
-              </tr>
+                </Table.Td>
+              </Table.Tr>
             ))}
-          </tbody>
-        </table>
+          </Table.Tbody>
+        </Table>
       </div>
     </>
   );
