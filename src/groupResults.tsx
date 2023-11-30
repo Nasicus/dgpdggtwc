@@ -103,7 +103,7 @@ const Group2ResultTable: FC = () => {
         ["Raven", "Titans", ""],
         ["Darwin", "Firefly", ""],
         ["Cyclops", "Clippy", ""],
-        ["Polaris Pathfinders", "Appic", ""],
+        ["Polaris Pathfinders", "mAppic", ""],
       ],
     ],
     [
@@ -111,7 +111,7 @@ const Group2ResultTable: FC = () => {
       [
         ["Firefly", "Raven", ""],
         ["Titans", "Clippy", ""],
-        ["Darwin", "Appic", ""],
+        ["Darwin", "mAppic", ""],
         ["Cyclops", "Polaris Pathfinders", ""],
       ],
     ],
@@ -119,7 +119,7 @@ const Group2ResultTable: FC = () => {
       "Week 3",
       [
         ["Raven", "Clippy", ""],
-        ["Firefly", "Appic", ""],
+        ["Firefly", "mAppic", ""],
         ["Titans", "Polaris Pathfinders", ""],
         ["Darwin", "Cyclops", ""],
       ],
@@ -127,7 +127,7 @@ const Group2ResultTable: FC = () => {
     [
       "Week 4",
       [
-        ["Appic", "Raven", ""],
+        ["mAppic", "Raven", ""],
         ["Clippy", "Polaris Pathfinders", ""],
         ["Firefly", "Cyclops", ""],
         ["Titans", "Darwin", ""],
@@ -137,7 +137,7 @@ const Group2ResultTable: FC = () => {
       "Week 5",
       [
         ["Raven", "Polaris Pathfinders", ""],
-        ["Appic", "Cyclops", ""],
+        ["mAppic", "Cyclops", ""],
         ["Clippy", "Darwin", ""],
         ["Firefly", "Titans", ""],
       ],
@@ -147,7 +147,7 @@ const Group2ResultTable: FC = () => {
       [
         ["Cyclops", "Raven", ""],
         ["Polaris Pathfinders", "Darwin", ""],
-        ["Appic", "Titans", ""],
+        ["mAppic", "Titans", ""],
         ["Clippy", "Firefly", ""],
       ],
     ],
@@ -157,7 +157,7 @@ const Group2ResultTable: FC = () => {
         ["Raven", "Darwin", ""],
         ["Cyclops", "Titans", ""],
         ["Polaris Pathfinders", "Firefly", ""],
-        ["Appic", "Clippy", ""],
+        ["mAppic", "Clippy", ""],
       ],
     ],
   ];
@@ -252,7 +252,7 @@ const Group4ResultTable: FC = () => {
       [
         ["Rivendell", "Beo-Guesser", ""],
         ["Isotopes", "CBM Plattform", ""],
-        ["Pönix", "Heisenguess", ""],
+        ["Phoenix", "Heisenguess", ""],
         ["Raiders of the Lost Payment", "The Rookies", ""],
       ],
     ],
@@ -262,7 +262,7 @@ const Group4ResultTable: FC = () => {
         ["CBM Plattform", "Rivendell", ""],
         ["Beo-Guesser", "Heisenguess", ""],
         ["Isotopes", "The Rookies", ""],
-        ["Pönix", "Raiders of the Lost Payment", ""],
+        ["Phoenix", "Raiders of the Lost Payment", ""],
       ],
     ],
     [
@@ -271,7 +271,7 @@ const Group4ResultTable: FC = () => {
         ["Rivendell", "Heisenguess", ""],
         ["CBM Plattform", "The Rookies", ""],
         ["Beo-Guesser", "Raiders of the Lost Payment", ""],
-        ["Isotopes", "Pönix", ""],
+        ["Isotopes", "Phoenix", ""],
       ],
     ],
     [
@@ -279,7 +279,7 @@ const Group4ResultTable: FC = () => {
       [
         ["The Rookies", "Rivendell", ""],
         ["Heisenguess", "Raiders of the Lost Payment", ""],
-        ["CBM Plattform", "Pönix", ""],
+        ["CBM Plattform", "Phoenix", ""],
         ["Beo-Guesser", "Isotopes", ""],
       ],
     ],
@@ -287,7 +287,7 @@ const Group4ResultTable: FC = () => {
       "Week 5",
       [
         ["Rivendell", "Raiders of the Lost Payment", ""],
-        ["The Rookies", "Pönix", ""],
+        ["The Rookies", "Phoenix", ""],
         ["Heisenguess", "Isotopes", ""],
         ["CBM Plattform", "Beo-Guesser", ""],
       ],
@@ -295,7 +295,7 @@ const Group4ResultTable: FC = () => {
     [
       "Week 6",
       [
-        ["Pönix", "Rivendell", ""],
+        ["Phoenix", "Rivendell", ""],
         ["Raiders of the Lost Payment", "Isotopes", ""],
         ["The Rookies", "Beo-Guesser", ""],
         ["Heisenguess", "CBM Plattform", ""],
@@ -305,7 +305,7 @@ const Group4ResultTable: FC = () => {
       "Week 7",
       [
         ["Rivendell", "Isotopes", ""],
-        ["Pönix", "Beo-Guesser", ""],
+        ["Phoenix", "Beo-Guesser", ""],
         ["Raiders of the Lost Payment", "CBM Plattform", ""],
         ["The Rookies", "Heisenguess", ""],
       ],

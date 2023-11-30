@@ -25,7 +25,7 @@ export const PairingTables: FC = () => {
           "Darwin",
           "Cyclops",
           "Polaris Pathfinders",
-          "Appic",
+          "mAppic",
           "Clippy",
           "Firefly",
           "Titans",
@@ -50,7 +50,7 @@ export const PairingTables: FC = () => {
         pairings={[
           "Rivendell",
           "Isotopes",
-          "Pönix",
+          "Phoenix",
           "Raiders of the Lost Payment",
           "The Rookies",
           "Heisenguess",
