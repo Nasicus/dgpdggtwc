@@ -25,8 +25,8 @@ const Group1ResultTable: FC = () => {
     [
       "Week 1",
       [
-        ["Skyfall", "Octopussy", ""],
-        ["Funny Cats", "Helix", ""],
+        ["Skyfall", "Octopussy", "2:0"],
+        ["Funny Cats", "Helix", "0:2"],
         ["Blofeld", "Banana", ""],
         ["Planet Express", "Nucular", ""],
       ],
@@ -101,9 +101,9 @@ const Group2ResultTable: FC = () => {
       "Week 1",
       [
         ["Raven", "Titans", ""],
-        ["Darwin", "Firefly", ""],
+        ["Darwin", "Firefly", "2:0"],
         ["Cyclops", "Clippy", ""],
-        ["Polaris Pathfinders", "mAppic", ""],
+        ["Polaris Pathfinders", "mAppic", "1:2"],
       ],
     ],
     [
@@ -175,7 +175,7 @@ const Group3ResultTable: FC = () => {
     [
       "Week 1",
       [
-        ["Bender! & FancyBear", "Enso", ""],
+        ["Bender! & FancyBear", "Enso", "2:0"],
         ["SeaFire", "BlackJack", ""],
         ["BECS", "Moneypenny", ""],
         ["Kassandra", "Gold-Finders", ""],
@@ -252,7 +252,7 @@ const Group4ResultTable: FC = () => {
       [
         ["Rivendell", "Beo-Guesser", ""],
         ["Isotopes", "CBM Plattform", ""],
-        ["Phoenix", "Heisenguess", ""],
+        ["Phoenix", "Heisenguess", "2:0"],
         ["Raiders of the Lost Payment", "The Rookies", ""],
       ],
     ],
@@ -334,14 +334,18 @@ type GroupResult = {
   };
 };
 
-const GroupResultTable: FC<{
-  groupName: string;
-  groupResult: GroupResult;
-}> = ({ groupName, groupResult }) => {
-  const sortedGroupNames = Object.keys(groupResult).sort(
-    (groupAName, groupBName) => {
-      const groupAResult = groupResult[groupAName];
-      const groupBResult = groupResult[groupBName];
+function calculateGroupRanking(groupResult: GroupResult) {
+  const equalResults: { [teamName: string]: string[] } = {};
+
+  let nextRank = 1;
+  let equalRank = 1;
+
+  const teamNames = Object.keys(groupResult);
+
+  return teamNames
+    .sort((teamAName, teamBName) => {
+      const groupAResult = groupResult[teamAName];
+      const groupBResult = groupResult[teamBName];
 
       if (groupAResult.points > groupBResult.points) {
         return -1;
@@ -362,11 +366,11 @@ const GroupResultTable: FC<{
         return 1;
       }
 
-      if (groupAResult.wonAgainst.includes(groupBName)) {
+      if (groupAResult.wonAgainst.includes(teamBName)) {
         return -1;
       }
 
-      if (groupBResult.wonAgainst.includes(groupAName)) {
+      if (groupBResult.wonAgainst.includes(teamAName)) {
         return 1;
       }
 
@@ -374,9 +378,38 @@ const GroupResultTable: FC<{
         return -1;
       }
 
-      return 1;
-    },
-  );
+      function ensureAndAddEqualTeam(teamName: string, otherTeamName: string) {
+        if (!equalResults[teamName]) {
+          equalResults[teamName] = [];
+        }
+        equalResults[teamName].push(otherTeamName);
+      }
+
+      ensureAndAddEqualTeam(teamAName, teamBName);
+      ensureAndAddEqualTeam(teamBName, teamAName);
+
+      return 0;
+    })
+    .map((teamName, i) => {
+      let teamRank: number;
+
+      if (i > 0 && !equalResults[teamName]?.includes(teamNames[i - 1])) {
+        teamRank = nextRank;
+        equalRank = nextRank;
+      } else {
+        teamRank = equalRank;
+      }
+      nextRank++;
+
+      return { teamName, rank: teamRank, result: groupResult[teamName] };
+    });
+}
+
+const GroupResultTable: FC<{
+  groupName: string;
+  groupResult: GroupResult;
+}> = ({ groupName, groupResult }) => {
+  const rankedTeams = calculateGroupRanking(groupResult);
 
   // we have to create 2 tables, because stupid confluence can only handle up to 3 columns when pasting
   // else it puts everything into one cell
@@ -389,21 +422,27 @@ const GroupResultTable: FC<{
         <Table>
           <Table.Thead>
             <Table.Tr>
+              <Table.Td>Rank</Table.Td>
               <Table.Td>Team</Table.Td>
               <Table.Td># Matches</Table.Td>
             </Table.Tr>
           </Table.Thead>
           <Table.Tbody>
-            {sortedGroupNames.map((teamName, i) => (
-              <Table.Tr key={teamName}>
-                <Table.Td className={getQualifiedClassName(i)}>
-                  {teamName}
-                </Table.Td>
-                <Table.Td className={getQualifiedClassName(i)}>
-                  {groupResult[teamName].matches}
-                </Table.Td>
-              </Table.Tr>
-            ))}
+            {rankedTeams.map((group, i) => {
+              return (
+                <Table.Tr key={group.teamName}>
+                  <Table.Td className={getQualifiedClassName(i)}>
+                    {group.rank}
+                  </Table.Td>
+                  <Table.Td className={getQualifiedClassName(i)}>
+                    {group.teamName}
+                  </Table.Td>
+                  <Table.Td className={getQualifiedClassName(i)}>
+                    {group.result.matches}
+                  </Table.Td>
+                </Table.Tr>
+              );
+            })}
           </Table.Tbody>
         </Table>
         <Table>
@@ -414,14 +453,13 @@ const GroupResultTable: FC<{
             </Table.Tr>
           </Table.Thead>
           <Table.Tbody>
-            {sortedGroupNames.map((teamName, i) => (
-              <Table.Tr key={teamName}>
+            {rankedTeams.map((team, i) => (
+              <Table.Tr key={team.teamName}>
                 <Table.Td className={getQualifiedClassName(i)}>
-                  {groupResult[teamName].points}
+                  {team.result.points}
                 </Table.Td>
                 <Table.Td className={getQualifiedClassName(i)}>
-                  {groupResult[teamName].gamesWon}:
-                  {groupResult[teamName].gamesLost}
+                  {team.result.gamesWon}:{team.result.gamesLost}
                 </Table.Td>
               </Table.Tr>
             ))}
