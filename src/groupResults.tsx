@@ -100,7 +100,7 @@ const Group2ResultTable: FC = () => {
     [
       "Week 1",
       [
-        ["Raven", "Titans", ""],
+        ["Raven", "Titans", "1:2"],
         ["Darwin", "Firefly", "2:0"],
         ["Cyclops", "Clippy", "2:1"],
         ["Polaris Pathfinders", "mAppic", "1:2"],
@@ -177,7 +177,7 @@ const Group3ResultTable: FC = () => {
       [
         ["Bender! & FancyBear", "Enso", "2:0"],
         ["SeaFire", "BlackJack", ""],
-        ["BECS", "Moneypenny", ""],
+        ["BECS", "Moneypenny", "2:0"],
         ["Kassandra", "Gold-Finders", ""],
       ],
     ],
