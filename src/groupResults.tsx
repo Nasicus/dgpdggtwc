@@ -102,7 +102,7 @@ const Group2ResultTable: FC = () => {
       [
         ["Raven", "Titans", ""],
         ["Darwin", "Firefly", "2:0"],
-        ["Cyclops", "Clippy", ""],
+        ["Cyclops", "Clippy", "2:1"],
         ["Polaris Pathfinders", "mAppic", "1:2"],
       ],
     ],
