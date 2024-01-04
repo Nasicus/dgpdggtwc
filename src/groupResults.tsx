@@ -27,26 +27,26 @@ const Group1ResultTable: FC = () => {
       [
         ["Skyfall", "Octopussy", "2:0"],
         ["Funny Cats", "Helix", "0:2"],
-        ["Blofeld", "Banana", ""],
-        ["Planet Express", "Nucular", ""],
+        ["Blofeld", "Banana", "1:2"],
+        ["Planet Express", "Nucular", "1:2"],
       ],
     ],
     [
       "Week 2",
       [
-        ["Helix", "Skyfall", ""],
-        ["Octopussy", "Banana", ""],
-        ["Funny Cats", "Nucular", ""],
-        ["Blofeld", "Planet Express", ""],
+        ["Helix", "Skyfall", "0:2"],
+        ["Octopussy", "Banana", "2:0"],
+        ["Funny Cats", "Nucular", "2:1"],
+        ["Blofeld", "Planet Express", "2:1"],
       ],
     ],
     [
       "Week 3",
       [
-        ["Skyfall", "Banana", ""],
-        ["Helix", "Nucular", ""],
+        ["Skyfall", "Banana", "2:0"],
+        ["Helix", "Nucular", "1:2"],
         ["Octopussy", "Planet Express", ""],
-        ["Funny Cats", "Blofeld", ""],
+        ["Funny Cats", "Blofeld", "0:2"],
       ],
     ],
     [
@@ -109,10 +109,10 @@ const Group2ResultTable: FC = () => {
     [
       "Week 2",
       [
-        ["Firefly", "Raven", ""],
-        ["Titans", "Clippy", ""],
-        ["Darwin", "mAppic", ""],
-        ["Cyclops", "Polaris Pathfinders", ""],
+        ["Firefly", "Raven", "1:2"],
+        ["Titans", "Clippy", "1:2"],
+        ["Darwin", "mAppic", "0:2"],
+        ["Cyclops", "Polaris Pathfinders", "0:2"],
       ],
     ],
     [
@@ -121,7 +121,7 @@ const Group2ResultTable: FC = () => {
         ["Raven", "Clippy", ""],
         ["Firefly", "mAppic", ""],
         ["Titans", "Polaris Pathfinders", ""],
-        ["Darwin", "Cyclops", ""],
+        ["Darwin", "Cyclops", "2:0"],
       ],
     ],
     [
@@ -176,27 +176,27 @@ const Group3ResultTable: FC = () => {
       "Week 1",
       [
         ["Bender! & FancyBear", "Enso", "2:0"],
-        ["SeaFire", "BlackJack", ""],
+        ["SeaFire", "BlackJack", "2:0"],
         ["BECS", "Moneypenny", "2:0"],
-        ["Kassandra", "Gold-Finders", ""],
+        ["Kassandra", "Gold-Finders", "2:1"],
       ],
     ],
     [
       "Week 2",
       [
-        ["BlackJack", "Bender! & FancyBear", ""],
-        ["Enso", "Moneypenny", ""],
-        ["SeaFire", "Gold-Finders", ""],
-        ["BECS", "Kassandra", ""],
+        ["BlackJack", "Bender! & FancyBear", "1:2"],
+        ["Enso", "Moneypenny", "0:2"],
+        ["SeaFire", "Gold-Finders", "2:1"],
+        ["BECS", "Kassandra", "0:2"],
       ],
     ],
     [
       "Week 3",
       [
-        ["Bender! & FancyBear", "Moneypenny", ""],
+        ["Bender! & FancyBear", "Moneypenny", "2:0"],
         ["BlackJack", "Gold-Finders", ""],
         ["Enso", "Kassandra", ""],
-        ["SeaFire", "BECS", ""],
+        ["SeaFire", "BECS", "2:0"],
       ],
     ],
     [
@@ -250,25 +250,25 @@ const Group4ResultTable: FC = () => {
     [
       "Week 1",
       [
-        ["Rivendell", "Beo-Guesser", ""],
-        ["Isotopes", "CBM Plattform", ""],
+        ["Rivendell", "Beo-Guesser", "2:0"],
+        ["Isotopes", "CBM Plattform", "2:0"],
         ["Phoenix", "Heisenguess", "2:0"],
-        ["Raiders of the Lost Payment", "The Rookies", ""],
+        ["Raiders of the Lost Payment", "The Rookies", "2:0"],
       ],
     ],
     [
       "Week 2",
       [
-        ["CBM Plattform", "Rivendell", ""],
-        ["Beo-Guesser", "Heisenguess", ""],
-        ["Isotopes", "The Rookies", ""],
-        ["Phoenix", "Raiders of the Lost Payment", ""],
+        ["CBM Plattform", "Rivendell", "2:0"],
+        ["Beo-Guesser", "Heisenguess", "2:0"],
+        ["Isotopes", "The Rookies", "2:0"],
+        ["Phoenix", "Raiders of the Lost Payment", "2:1"],
       ],
     ],
     [
       "Week 3",
       [
-        ["Rivendell", "Heisenguess", ""],
+        ["Rivendell", "Heisenguess", "0:2"],
         ["CBM Plattform", "The Rookies", ""],
         ["Beo-Guesser", "Raiders of the Lost Payment", ""],
         ["Isotopes", "Phoenix", ""],
