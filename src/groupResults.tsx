@@ -45,43 +45,43 @@ const Group1ResultTable: FC = () => {
       [
         ["Skyfall", "Banana", "2:0"],
         ["Helix", "Nucular", "1:2"],
-        ["Octopussy", "Planet Express", ""],
+        ["Octopussy", "Planet Express", "2:0"],
         ["Funny Cats", "Blofeld", "0:2"],
       ],
     ],
     [
       "Week 4",
       [
-        ["Nucular", "Skyfall", ""],
-        ["Banana", "Planet Express", ""],
-        ["Helix", "Blofeld", ""],
-        ["Octopussy", "Funny Cats", ""],
+        ["Nucular", "Skyfall", "0:2"],
+        ["Banana", "Planet Express", "0:2"],
+        ["Helix", "Blofeld", "0:2"],
+        ["Octopussy", "Funny Cats", "2:1"],
       ],
     ],
     [
       "Week 5",
       [
-        ["Skyfall", "Planet Express", ""],
-        ["Nucular", "Blofeld", ""],
-        ["Banana", "Funny Cats", ""],
-        ["Helix", "Octopussy", ""],
+        ["Skyfall", "Planet Express", "2:1"],
+        ["Nucular", "Blofeld", "2:1"],
+        ["Banana", "Funny Cats", "2:0"],
+        ["Helix", "Octopussy", "0:2"],
       ],
     ],
     [
       "Week 6",
       [
-        ["Blofeld", "Skyfall", ""],
-        ["Planet Express", "Funny Cats", ""],
-        ["Nucular", "Octopussy", ""],
-        ["Banana", "Helix", ""],
+        ["Blofeld", "Skyfall", "0:2"],
+        ["Planet Express", "Funny Cats", "2:1"],
+        ["Nucular", "Octopussy", "0:2"],
+        ["Banana", "Helix", "1:2"],
       ],
     ],
     [
       "Week 7",
       [
-        ["Skyfall", "Funny Cats", ""],
-        ["Blofeld", "Octopussy", ""],
-        ["Planet Express", "Helix", ""],
+        ["Skyfall", "Funny Cats", "2:0"],
+        ["Blofeld", "Octopussy", "0:2"],
+        ["Planet Express", "Helix", "0:2"],
         ["Nucular", "Banana", ""],
       ],
     ],
@@ -118,45 +118,45 @@ const Group2ResultTable: FC = () => {
     [
       "Week 3",
       [
-        ["Raven", "Clippy", ""],
-        ["Firefly", "mAppic", ""],
-        ["Titans", "Polaris Pathfinders", ""],
+        ["Raven", "Clippy", "2:0"],
+        ["Firefly", "mAppic", "1:2"],
+        ["Titans", "Polaris Pathfinders", "0:2"],
         ["Darwin", "Cyclops", "2:0"],
       ],
     ],
     [
       "Week 4",
       [
-        ["mAppic", "Raven", ""],
-        ["Clippy", "Polaris Pathfinders", ""],
-        ["Firefly", "Cyclops", ""],
-        ["Titans", "Darwin", ""],
+        ["mAppic", "Raven", "2:1"],
+        ["Clippy", "Polaris Pathfinders", "2:1"],
+        ["Firefly", "Cyclops", "2:0"],
+        ["Titans", "Darwin", "0:2"],
       ],
     ],
     [
       "Week 5",
       [
-        ["Raven", "Polaris Pathfinders", ""],
-        ["mAppic", "Cyclops", ""],
-        ["Clippy", "Darwin", ""],
-        ["Firefly", "Titans", ""],
+        ["Raven", "Polaris Pathfinders", "0:2"],
+        ["mAppic", "Cyclops", "1:2"],
+        ["Clippy", "Darwin", "2:1"],
+        ["Firefly", "Titans", "1:2"],
       ],
     ],
     [
       "Week 6",
       [
-        ["Cyclops", "Raven", ""],
-        ["Polaris Pathfinders", "Darwin", ""],
-        ["mAppic", "Titans", ""],
-        ["Clippy", "Firefly", ""],
+        ["Cyclops", "Raven", "1:2"],
+        ["Polaris Pathfinders", "Darwin", "2:0"],
+        ["mAppic", "Titans", "2:0"],
+        ["Clippy", "Firefly", "1:2"],
       ],
     ],
     [
       "Week 7",
       [
-        ["Raven", "Darwin", ""],
-        ["Cyclops", "Titans", ""],
-        ["Polaris Pathfinders", "Firefly", ""],
+        ["Raven", "Darwin", "0:2"],
+        ["Cyclops", "Titans", "2:1"],
+        ["Polaris Pathfinders", "Firefly", "2:0"],
         ["mAppic", "Clippy", ""],
       ],
     ],
@@ -194,45 +194,45 @@ const Group3ResultTable: FC = () => {
       "Week 3",
       [
         ["Bender! & FancyBear", "Moneypenny", "2:0"],
-        ["BlackJack", "Gold-Finders", ""],
-        ["Enso", "Kassandra", ""],
+        ["BlackJack", "Gold-Finders", "1:2"],
+        ["Enso", "Kassandra", "0:2"],
         ["SeaFire", "BECS", "2:0"],
       ],
     ],
     [
       "Week 4",
       [
-        ["Gold-Finders", "Bender! & FancyBear", ""],
-        ["Moneypenny", "Kassandra", ""],
-        ["BlackJack", "BECS", ""],
-        ["Enso", "SeaFire", ""],
+        ["Gold-Finders", "Bender! & FancyBear", "1:2"],
+        ["Moneypenny", "Kassandra", "0:2"],
+        ["BlackJack", "BECS", "2:1"],
+        ["Enso", "SeaFire", "0:2"],
       ],
     ],
     [
       "Week 5",
       [
-        ["Bender! & FancyBear", "Kassandra", ""],
-        ["Gold-Finders", "BECS", ""],
-        ["Moneypenny", "SeaFire", ""],
-        ["BlackJack", "Enso", ""],
+        ["Bender! & FancyBear", "Kassandra", "2:1"],
+        ["Gold-Finders", "BECS", "2:0"],
+        ["Moneypenny", "SeaFire", "1:2"],
+        ["BlackJack", "Enso", "1:2"],
       ],
     ],
     [
       "Week 6",
       [
-        ["BECS", "Bender! & FancyBear", ""],
-        ["Kassandra", "SeaFire", ""],
-        ["Gold-Finders", "Enso", ""],
-        ["Moneypenny", "BlackJack", ""],
+        ["BECS", "Bender! & FancyBear", "0:2"],
+        ["Kassandra", "SeaFire", "2:0"],
+        ["Gold-Finders", "Enso", "2:0"],
+        ["Moneypenny", "BlackJack", "2:1"],
       ],
     ],
     [
       "Week 7",
       [
         ["Bender! & FancyBear", "SeaFire", ""],
-        ["BECS", "Enso", ""],
-        ["Kassandra", "BlackJack", ""],
-        ["Gold-Finders", "Moneypenny", ""],
+        ["BECS", "Enso", "2:0"],
+        ["Kassandra", "BlackJack", "2:0"],
+        ["Gold-Finders", "Moneypenny", "0:2"],
       ],
     ],
   ];
@@ -269,45 +269,45 @@ const Group4ResultTable: FC = () => {
       "Week 3",
       [
         ["Rivendell", "Heisenguess", "0:2"],
-        ["CBM Plattform", "The Rookies", ""],
-        ["Beo-Guesser", "Raiders of the Lost Payment", ""],
-        ["Isotopes", "Phoenix", ""],
+        ["CBM Plattform", "The Rookies", "2:1"],
+        ["Beo-Guesser", "Raiders of the Lost Payment", "1:2"],
+        ["Isotopes", "Phoenix", "1:2"],
       ],
     ],
     [
       "Week 4",
       [
-        ["The Rookies", "Rivendell", ""],
-        ["Heisenguess", "Raiders of the Lost Payment", ""],
-        ["CBM Plattform", "Phoenix", ""],
-        ["Beo-Guesser", "Isotopes", ""],
+        ["The Rookies", "Rivendell", "1:2"],
+        ["Heisenguess", "Raiders of the Lost Payment", "0:2"],
+        ["CBM Plattform", "Phoenix", "2:1"],
+        ["Beo-Guesser", "Isotopes", "0:2"],
       ],
     ],
     [
       "Week 5",
       [
-        ["Rivendell", "Raiders of the Lost Payment", ""],
-        ["The Rookies", "Phoenix", ""],
-        ["Heisenguess", "Isotopes", ""],
-        ["CBM Plattform", "Beo-Guesser", ""],
+        ["Rivendell", "Raiders of the Lost Payment", "2:1"],
+        ["The Rookies", "Phoenix", "1:2"],
+        ["Heisenguess", "Isotopes", "0:2"],
+        ["CBM Plattform", "Beo-Guesser", "0:f"],
       ],
     ],
     [
       "Week 6",
       [
-        ["Phoenix", "Rivendell", ""],
-        ["Raiders of the Lost Payment", "Isotopes", ""],
-        ["The Rookies", "Beo-Guesser", ""],
-        ["Heisenguess", "CBM Plattform", ""],
+        ["Phoenix", "Rivendell", "2:0"],
+        ["Raiders of the Lost Payment", "Isotopes", "2:1"],
+        ["The Rookies", "Beo-Guesser", "1:2"],
+        ["Heisenguess", "CBM Plattform", "1:2"],
       ],
     ],
     [
       "Week 7",
       [
-        ["Rivendell", "Isotopes", ""],
+        ["Rivendell", "Isotopes", "0:2"],
         ["Phoenix", "Beo-Guesser", ""],
-        ["Raiders of the Lost Payment", "CBM Plattform", ""],
-        ["The Rookies", "Heisenguess", ""],
+        ["Raiders of the Lost Payment", "CBM Plattform", "2:0"],
+        ["The Rookies", "Heisenguess", "2:0"],
       ],
     ],
   ];
@@ -496,7 +496,7 @@ function calculateGroupResults(group: Group) {
       const ratios = teamResult[2]
         .replace(/\s+/g, "")
         .split(":")
-        .map((p) => parseInt(p));
+        .map((p) => (p === "f" ? "forfait" : parseInt(p)));
 
       if (ratios.length !== 2) {
         return;
@@ -505,16 +505,32 @@ function calculateGroupResults(group: Group) {
       function addWeekResult(
         teamName: string,
         otherTeamName: string,
-        gamesWon: number,
-        gamesLost: number,
+        gamesWon: number | "forfait",
+        gamesLost: number | "forfait",
       ) {
         table[teamName].matches += 1;
-        table[teamName].gamesWon += gamesWon;
-        table[teamName].gamesLost += gamesLost;
 
-        if (gamesWon > gamesLost) {
+        // forfait rule: counts as win for the opposing team
+        // and as a 0:2 loss for the team that forfeited,
+        // for the winning team the game ratio doesn't change
+        if (gamesWon === "forfait" || gamesLost === "forfait") {
+          if (gamesWon === "forfait") {
+            table[teamName].gamesLost += 2;
+          } else {
+            // you don't get any points awarded for winning by forfait
+            addWin();
+          }
+        } else {
+          table[teamName].gamesWon += gamesWon;
+          table[teamName].gamesLost += gamesLost;
+
+          if (gamesWon > gamesLost) {
+            addWin();
+          }
+        }
+
+        function addWin() {
           table[teamName].points += 1;
-
           table[teamName].wonAgainst.push(otherTeamName);
         }
       }
