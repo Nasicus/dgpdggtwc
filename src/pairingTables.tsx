@@ -1,63 +1,16 @@
 ﻿import { FC, Fragment } from "react";
 import { Table } from "@mantine/core";
+import { group1, group2, group3, group4 } from "./data/pairings.ts";
 
 export const PairingTables: FC = () => {
   return (
     <>
-      <PairingsTable
-        name="Group 1"
-        pairings={[
-          "Skyfall",
-          "Funny Cats",
-          "Blofeld",
-          "Planet Express",
-          "Nucular",
-          "Banana",
-          "Helix",
-          "Octopussy",
-        ]}
-      />
+      <PairingsTable name="Group 1" pairings={group1} />
 
-      <PairingsTable
-        name="Group 2"
-        pairings={[
-          "Raven",
-          "Darwin",
-          "Cyclops",
-          "Polaris Pathfinders",
-          "mAppic",
-          "Clippy",
-          "Firefly",
-          "Titans",
-        ]}
-      />
-      <PairingsTable
-        name="Group 3"
-        pairings={[
-          "Bender! & FancyBear",
-          "SeaFire",
-          "BECS",
-          "Kassandra",
-          "Gold-Finders",
-          "Moneypenny",
-          "BlackJack",
-          "Enso",
-        ]}
-      />
+      <PairingsTable name="Group 2" pairings={group2} />
+      <PairingsTable name="Group 3" pairings={group3} />
 
-      <PairingsTable
-        name="Group 4"
-        pairings={[
-          "Rivendell",
-          "Isotopes",
-          "Phoenix",
-          "Raiders of the Lost Payment",
-          "The Rookies",
-          "Heisenguess",
-          "CBM Plattform",
-          "Beo-Guesser",
-        ]}
-      />
+      <PairingsTable name="Group 4" pairings={group4} />
     </>
   );
 };

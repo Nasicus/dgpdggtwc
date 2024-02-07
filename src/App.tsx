@@ -1,7 +1,7 @@
 import { FC } from "react";
 import "./App.css";
 import { PairingTables } from "./pairingTables.tsx";
-import { GroupResults } from "./groupResults.tsx";
+import { GroupResultsTab } from "./groupResultsTab.tsx";
 import { Tabs } from "@mantine/core";
 
 export const App: FC = () => {
@@ -17,7 +17,7 @@ export const App: FC = () => {
       </Tabs.Panel>
 
       <Tabs.Panel value="groupResults">
-        <GroupResults />
+        <GroupResultsTab />
       </Tabs.Panel>
     </Tabs>
   );
