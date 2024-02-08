@@ -61,7 +61,7 @@ export const group1: Group = [
       ["Skyfall", "Funny Cats", "2:0"],
       ["Blofeld", "Octopussy", "0:2"],
       ["Planet Express", "Helix", "0:2"],
-      ["Nucular", "Banana", ""],
+      ["Nucular", "Banana", "2:0"],
     ],
   ],
 ];
