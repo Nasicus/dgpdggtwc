@@ -127,7 +127,7 @@ export const group2: Group = [
       ["Raven", "Darwin", "0:2"],
       ["Cyclops", "Titans", "2:1"],
       ["Polaris Pathfinders", "Firefly", "2:0"],
-      ["mAppic", "Clippy", ""],
+      ["mAppic", "Clippy", "0:2"],
     ],
   ],
 ];
@@ -190,7 +190,7 @@ export const group3: Group = [
   [
     "Week 7",
     [
-      ["Bender! & FancyBear", "SeaFire", ""],
+      ["Bender! & FancyBear", "SeaFire", "1:2"],
       ["BECS", "Enso", "2:0"],
       ["Kassandra", "BlackJack", "2:0"],
       ["Gold-Finders", "Moneypenny", "0:2"],
@@ -257,7 +257,7 @@ export const group4: Group = [
     "Week 7",
     [
       ["Rivendell", "Isotopes", "0:2"],
-      ["Phoenix", "Beo-Guesser", ""],
+      ["Phoenix", "Beo-Guesser", "2:0"],
       ["Raiders of the Lost Payment", "CBM Plattform", "2:0"],
       ["The Rookies", "Heisenguess", "2:0"],
     ],
