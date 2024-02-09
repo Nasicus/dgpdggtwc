@@ -5,15 +5,51 @@ import { group4, group3, group2, group1 } from "./data/groupResults.ts";
 import { Group } from "./groupTypes";
 
 export const GroupResultsTab: FC = () => {
+  const groupResults = getGroupResults(
+    [group1, "Group 1"],
+    [group2, "Group 2"],
+    [group3, "Group 3"],
+    [group4, "Group 4"],
+  );
+
   return (
     <>
-      <GroupResultTable groupData={group1} groupName="Group 1" />
-      <GroupResultTable groupData={group2} groupName="Group 2" />
-      <GroupResultTable groupData={group3} groupName="Group 3" />
-      <GroupResultTable groupData={group4} groupName="Group 4" />
+      <Statistics
+        groupResults={groupResults.map(([groupResult]) => groupResult)}
+      />
+      <GroupResultTable
+        groupResult={groupResults.reduce<GroupResult>(
+          (overall, [groupResult, groupName]) => {
+            Object.keys(groupResult).forEach((teamName) => {
+              overall[`${teamName} (${groupName})`] = groupResult[teamName];
+            });
+            return overall;
+          },
+          {},
+        )}
+        groupName="Overall"
+      />
+      {groupResults.map(([groupResult, groupName]) => (
+        <GroupResultTable
+          key={groupName}
+          groupResult={groupResult}
+          groupName={groupName}
+        />
+      ))}
     </>
   );
 };
+
+type GroupName = string;
+
+function getGroupResults(
+  ...groups: [Group, GroupName][]
+): Array<[GroupResult, GroupName]> {
+  return groups.map(([groupData, groupName]) => [
+    calculateGroupResults(groupData),
+    groupName,
+  ]);
+}
 
 function getQualifiedClassName(i: number) {
   return i < 4 ? classes.qualified : undefined;
@@ -102,9 +138,8 @@ function calculateGroupRanking(groupResult: GroupResult) {
 
 const GroupResultTable: FC<{
   groupName: string;
-  groupData: Group;
-}> = ({ groupName, groupData }) => {
-  const groupResult = calculateGroupResults(groupData);
+  groupResult: GroupResult;
+}> = ({ groupName, groupResult }) => {
   const rankedTeams = calculateGroupRanking(groupResult);
 
   // we have to create 2 tables, because stupid confluence can only handle up to 3 columns when pasting
@@ -166,7 +201,7 @@ const GroupResultTable: FC<{
   );
 };
 
-function calculateGroupResults(group: Group) {
+function calculateGroupResults(group: Group): GroupResult {
   return group.reduce((table, teamResults) => {
     teamResults[1].forEach((teamResult) => {
       const homeTeam = teamResult[0];
@@ -238,3 +273,42 @@ function calculateGroupResults(group: Group) {
     return table;
   }, {} as GroupResult);
 }
+
+const Statistics: FC<{ groupResults: GroupResult[] }> = ({ groupResults }) => {
+  const statistics = {
+    matches: 0,
+    gamesTotal: 0,
+    points: 0,
+  };
+
+  groupResults.forEach((groupResult) => {
+    Object.keys(groupResult).forEach((teamName) => {
+      const teamResult = groupResult[teamName];
+      statistics.matches += teamResult.matches;
+      statistics.gamesTotal += teamResult.gamesWon;
+      statistics.points += teamResult.points;
+    });
+  });
+
+  return (
+    <>
+      <h3>Stats</h3>
+      <Table>
+        <Table.Thead>
+          <Table.Tr>
+            <Table.Td>Matches</Table.Td>
+            <Table.Td>Games</Table.Td>
+            <Table.Td>Points</Table.Td>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
+          <Table.Tr>
+            <Table.Td>{statistics.matches}</Table.Td>
+            <Table.Td>{statistics.gamesTotal}</Table.Td>
+            <Table.Td>{statistics.points}</Table.Td>
+          </Table.Tr>
+        </Table.Tbody>
+      </Table>
+    </>
+  );
+};
