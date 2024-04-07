@@ -284,7 +284,7 @@ const Statistics: FC<{ groupResults: GroupResult[] }> = ({ groupResults }) => {
   groupResults.forEach((groupResult) => {
     Object.keys(groupResult).forEach((teamName) => {
       const teamResult = groupResult[teamName];
-      statistics.matches += teamResult.matches;
+      statistics.matches += teamResult.wonAgainst.length;
       statistics.gamesTotal += teamResult.gamesWon;
       statistics.points += teamResult.points;
     });
