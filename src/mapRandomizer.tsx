@@ -16,7 +16,7 @@ export const MapRandomizer: FC = () => {
       {Array(numberOfGamesToRandomize)
         .fill(0)
         .map((_, i) => (
-          <WheelWeek week={i + 1} key={i} mapsToRandomize={mapsToRandomize} />
+          <WheelMatch match={i + 1} key={i} mapsToRandomize={mapsToRandomize} />
         ))}
     </Host>
   );
@@ -27,8 +27,8 @@ const Host = styled.div`
   flex-direction: column;
 `;
 
-const WheelWeek: FC<{ week: number; mapsToRandomize: string[] }> = ({
-  week,
+const WheelMatch: FC<{ match: number; mapsToRandomize: string[] }> = ({
+  match,
   mapsToRandomize: initialMaps,
 }) => {
   const [maps, setMaps] = useState(initialMaps);
@@ -52,7 +52,7 @@ const WheelWeek: FC<{ week: number; mapsToRandomize: string[] }> = ({
         disabled={!canSpin || maps.length <= 1}
       />
       <div>
-        <h2>Week {week}</h2>
+        <h2>Match {match}</h2>
         <h3>Game order</h3>
         <ol onClick={handleNext}>
           {pickedMaps.map((m) => (
