@@ -8,7 +8,7 @@ const mapsToRandomize = [
   "A Community World",
 ];
 
-const numberOfGamesToRandomize = 7;
+const numberOfGamesToRandomize = 9;
 
 export const MapRandomizer: FC = () => {
   return (
