@@ -38,7 +38,9 @@ const PairingsTable: FC<{ pairings: string[]; name: string }> = ({
               {/*<td>{JSON.stringify(pairing.map(p => [p.homeTeam, p.foreignTeam, ""]), null, 2)}</td> */}
               {pairing.map((p, i) => (
                 <Table.Tr key={i}>
-                  <Table.Td>{p.homeTeam}</Table.Td>
+                  <Table.Td>
+                    {p.homeTeam || <i>{`Team with break: ${p.breakTeam}`}</i>}
+                  </Table.Td>
                   <Table.Td>{p.foreignTeam}</Table.Td>
                 </Table.Tr>
               ))}
@@ -54,7 +56,11 @@ const PairingsTable: FC<{ pairings: string[]; name: string }> = ({
         {JSON.stringify(
           calculatedPairings.map((pairings, week) => [
             `Week ${week + 1}`,
-            pairings.map((p) => [p.homeTeam, p.foreignTeam, ""]),
+            pairings.map((p) => [
+              p.homeTeam || "BREAK",
+              p.foreignTeam || p.breakTeam,
+              "",
+            ]),
           ]),
           null,
           2,
