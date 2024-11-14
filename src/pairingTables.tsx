@@ -1,6 +1,7 @@
 ﻿import { FC, Fragment } from "react";
 import { Table } from "@mantine/core";
 import { group1, group2, group3, group4 } from "./data/pairings.ts";
+import classes from "./pairingTables.module.css";
 
 export const PairingTables: FC = () => {
   return (
@@ -38,10 +39,16 @@ const PairingsTable: FC<{ pairings: string[]; name: string }> = ({
               {/*<td>{JSON.stringify(pairing.map(p => [p.homeTeam, p.foreignTeam, ""]), null, 2)}</td> */}
               {pairing.map((p, i) => (
                 <Table.Tr key={i}>
-                  <Table.Td>
-                    {p.homeTeam || <i>{`Team with break: ${p.breakTeam}`}</i>}
-                  </Table.Td>
-                  <Table.Td>{p.foreignTeam}</Table.Td>
+                  {!p.breakTeam ? (
+                    <>
+                      <Table.Td>{p.homeTeam}</Table.Td>
+                      <Table.Td>{p.foreignTeam}</Table.Td>
+                    </>
+                  ) : (
+                    <Table.Td colSpan={2} className={classes.break}>
+                      <i>{`Team with break: ${p.breakTeam}`}</i>
+                    </Table.Td>
+                  )}
                 </Table.Tr>
               ))}
               <Table.Tr>

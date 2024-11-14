@@ -5,7 +5,7 @@ export const group1: Group = [
     "Week 1",
     [
       ["Phoenix", "Mandalorians", ""],
-      ["SSM (DobinischomolmitemVelodure)", "Heisenberg", ""],
+      ["SSM", "Heisenberg", ""],
       ["Clippy", "Bananas", ""],
       ["Isotopes", "PlanetExpress", ""],
       ["Phantom Coin", "Endeavour", ""],
@@ -16,7 +16,7 @@ export const group1: Group = [
     [
       ["Heisenberg", "Phoenix", ""],
       ["Mandalorians", "Bananas", ""],
-      ["SSM (DobinischomolmitemVelodure)", "PlanetExpress", ""],
+      ["SSM", "PlanetExpress", ""],
       ["Clippy", "Endeavour", ""],
       ["Isotopes", "Phantom Coin", ""],
     ],
@@ -27,7 +27,7 @@ export const group1: Group = [
       ["Phoenix", "Bananas", ""],
       ["Heisenberg", "PlanetExpress", ""],
       ["Mandalorians", "Endeavour", ""],
-      ["SSM (DobinischomolmitemVelodure)", "Phantom Coin", ""],
+      ["SSM", "Phantom Coin", ""],
       ["Clippy", "Isotopes", ""],
     ],
   ],
@@ -38,7 +38,7 @@ export const group1: Group = [
       ["Bananas", "Endeavour", ""],
       ["Heisenberg", "Phantom Coin", ""],
       ["Mandalorians", "Isotopes", ""],
-      ["SSM (DobinischomolmitemVelodure)", "Clippy", ""],
+      ["SSM", "Clippy", ""],
     ],
   ],
   [
@@ -48,7 +48,7 @@ export const group1: Group = [
       ["PlanetExpress", "Phantom Coin", ""],
       ["Bananas", "Isotopes", ""],
       ["Heisenberg", "Clippy", ""],
-      ["Mandalorians", "SSM (DobinischomolmitemVelodure)", ""],
+      ["Mandalorians", "SSM", ""],
     ],
   ],
   [
@@ -57,7 +57,7 @@ export const group1: Group = [
       ["Phantom Coin", "Phoenix", ""],
       ["Endeavour", "Isotopes", ""],
       ["PlanetExpress", "Clippy", ""],
-      ["Bananas", "SSM (DobinischomolmitemVelodure)", ""],
+      ["Bananas", "SSM", ""],
       ["Heisenberg", "Mandalorians", ""],
     ],
   ],
@@ -66,7 +66,7 @@ export const group1: Group = [
     [
       ["Phoenix", "Isotopes", ""],
       ["Phantom Coin", "Clippy", ""],
-      ["Endeavour", "SSM (DobinischomolmitemVelodure)", ""],
+      ["Endeavour", "SSM", ""],
       ["PlanetExpress", "Mandalorians", ""],
       ["Bananas", "Heisenberg", ""],
     ],
@@ -75,7 +75,7 @@ export const group1: Group = [
     "Week 8",
     [
       ["Clippy", "Phoenix", ""],
-      ["Isotopes", "SSM (DobinischomolmitemVelodure)", ""],
+      ["Isotopes", "SSM", ""],
       ["Phantom Coin", "Mandalorians", ""],
       ["Endeavour", "Heisenberg", ""],
       ["PlanetExpress", "Bananas", ""],
@@ -84,7 +84,7 @@ export const group1: Group = [
   [
     "Week 9",
     [
-      ["Phoenix", "SSM (DobinischomolmitemVelodure)", ""],
+      ["Phoenix", "SSM", ""],
       ["Clippy", "Mandalorians", ""],
       ["Isotopes", "Heisenberg", ""],
       ["Phantom Coin", "Bananas", ""],
@@ -283,7 +283,7 @@ export const group4: Group = [
   [
     "Week 1",
     [
-      ["It's pronounced 'Nucular'", "Blackjack", ""],
+      ["Nucular", "Blackjack", ""],
       ["Darwin", "BECS", ""],
       ["Das Business", "Don't Panic", ""],
       ["The Rookies", "Finity", ""],
@@ -294,7 +294,7 @@ export const group4: Group = [
     "Week 2",
     [
       ["Blackjack", "Skyfall", ""],
-      ["It's pronounced 'Nucular'", "Don't Panic", ""],
+      ["Nucular", "Don't Panic", ""],
       ["Darwin", "Finity", ""],
       ["Das Business", "The Rookies", ""],
       ["BREAK", "BECS", ""],
@@ -305,7 +305,7 @@ export const group4: Group = [
     [
       ["Skyfall", "BECS", ""],
       ["Blackjack", "Don't Panic", ""],
-      ["It's pronounced 'Nucular'", "The Rookies", ""],
+      ["Nucular", "The Rookies", ""],
       ["Darwin", "Das Business", ""],
       ["BREAK", "Finity", ""],
     ],
@@ -316,7 +316,7 @@ export const group4: Group = [
       ["Don't Panic", "Skyfall", ""],
       ["BECS", "Finity", ""],
       ["Blackjack", "The Rookies", ""],
-      ["It's pronounced 'Nucular'", "Darwin", ""],
+      ["Nucular", "Darwin", ""],
       ["BREAK", "Das Business", ""],
     ],
   ],
@@ -327,7 +327,7 @@ export const group4: Group = [
       ["Don't Panic", "The Rookies", ""],
       ["BECS", "Das Business", ""],
       ["Blackjack", "Darwin", ""],
-      ["BREAK", "It's pronounced 'Nucular'", ""],
+      ["BREAK", "Nucular", ""],
     ],
   ],
   [
@@ -336,7 +336,7 @@ export const group4: Group = [
       ["The Rookies", "Skyfall", ""],
       ["Finity", "Das Business", ""],
       ["Don't Panic", "Darwin", ""],
-      ["BECS", "It's pronounced 'Nucular'", ""],
+      ["BECS", "Nucular", ""],
       ["BREAK", "Blackjack", ""],
     ],
   ],
@@ -345,7 +345,7 @@ export const group4: Group = [
     [
       ["Skyfall", "Das Business", ""],
       ["The Rookies", "Darwin", ""],
-      ["Finity", "It's pronounced 'Nucular'", ""],
+      ["Finity", "Nucular", ""],
       ["BECS", "Blackjack", ""],
       ["BREAK", "Don't Panic", ""],
     ],
@@ -354,7 +354,7 @@ export const group4: Group = [
     "Week 8",
     [
       ["Darwin", "Skyfall", ""],
-      ["Das Business", "It's pronounced 'Nucular'", ""],
+      ["Das Business", "Nucular", ""],
       ["Finity", "Blackjack", ""],
       ["Don't Panic", "BECS", ""],
       ["BREAK", "The Rookies", ""],
@@ -363,7 +363,7 @@ export const group4: Group = [
   [
     "Week 9",
     [
-      ["Skyfall", "It's pronounced 'Nucular'", ""],
+      ["Skyfall", "Nucular", ""],
       ["Das Business", "Blackjack", ""],
       ["The Rookies", "BECS", ""],
       ["Finity", "Don't Panic", ""],

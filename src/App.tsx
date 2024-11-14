@@ -9,7 +9,7 @@ export const App: FC = () => {
   return (
     <Tabs defaultValue="mapRandomizer">
       <Tabs.List>
-        <Tabs.Tab value="pairings">Pairings</Tabs.Tab>
+        <Tabs.Tab value="paiings">Pairings</Tabs.Tab>
         <Tabs.Tab value="groupResults">Group Results</Tabs.Tab>
         <Tabs.Tab value="mapRandomizer">Map Randomizer</Tabs.Tab>
       </Tabs.List>

@@ -1,6 +1,6 @@
 ﻿export const group1 = [
   "Phoenix",
-  "SSM (DobinischomolmitemVelodure)",
+  "SSM",
   "Clippy",
   "Isotopes",
   "Phantom Coin",
@@ -38,7 +38,7 @@ export const group3 = [
 
 export const group4 = [
   "Skyfall",
-  "It's pronounced 'Nucular'",
+  "Nucular",
   "Darwin",
   "Das Business",
   "The Rookies",
