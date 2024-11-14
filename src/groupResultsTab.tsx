@@ -74,6 +74,7 @@ function calculateGroupRanking(groupResult: GroupResult) {
   const teamNames = Object.keys(groupResult);
 
   return teamNames
+    .filter((t) => t !== "BREAK")
     .sort((teamAName, teamBName) => {
       const groupAResult = groupResult[teamAName];
       const groupBResult = groupResult[teamBName];
