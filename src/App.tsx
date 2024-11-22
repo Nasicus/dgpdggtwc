@@ -7,9 +7,9 @@ import { MapRandomizer } from "./mapRandomizer.tsx";
 
 export const App: FC = () => {
   return (
-    <Tabs defaultValue="mapRandomizer">
+    <Tabs defaultValue="groupResults">
       <Tabs.List>
-        <Tabs.Tab value="paiings">Pairings</Tabs.Tab>
+        <Tabs.Tab value="pairings">Pairings</Tabs.Tab>
         <Tabs.Tab value="groupResults">Group Results</Tabs.Tab>
         <Tabs.Tab value="mapRandomizer">Map Randomizer</Tabs.Tab>
       </Tabs.List>

@@ -4,9 +4,9 @@ export const group1: Group = [
   [
     "Week 1",
     [
-      ["Phoenix", "Mandalorians", ""],
+      ["Phoenix", "Mandalorians", "2:0"],
       ["SSM", "Heisenberg", ""],
-      ["Clippy", "Bananas", ""],
+      ["Clippy", "Bananas", "2:0"],
       ["Isotopes", "PlanetExpress", ""],
       ["Phantom Coin", "Endeavour", ""],
     ],

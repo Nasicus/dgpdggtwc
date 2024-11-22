@@ -14,6 +14,13 @@ export const GroupResultsTab: FC = () => {
 
   return (
     <>
+      {groupResults.map(([groupResult, groupName]) => (
+        <GroupResultTable
+          key={groupName}
+          groupResult={groupResult}
+          groupName={groupName}
+        />
+      ))}
       <Statistics
         groupResults={groupResults.map(([groupResult]) => groupResult)}
       />
@@ -29,13 +36,6 @@ export const GroupResultsTab: FC = () => {
         )}
         groupName="Overall"
       />
-      {groupResults.map(([groupResult, groupName]) => (
-        <GroupResultTable
-          key={groupName}
-          groupResult={groupResult}
-          groupName={groupName}
-        />
-      ))}
     </>
   );
 };
