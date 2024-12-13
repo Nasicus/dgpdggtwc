@@ -7,7 +7,7 @@ export const group1: Group = [
       ["Phoenix", "Mandalorians", "2:0"],
       ["SSM", "Heisenberg", "2:0"],
       ["Clippy", "Bananas", "2:0"],
-      ["Isotopes", "PlanetExpress", ""],
+      ["Isotopes", "PlanetExpress", "0:2"],
       ["Phantom Coin", "Endeavour", "2:0"],
     ],
   ],
@@ -24,10 +24,10 @@ export const group1: Group = [
   [
     "Week 3",
     [
-      ["Phoenix", "Bananas", ""],
-      ["Heisenberg", "PlanetExpress", ""],
-      ["Mandalorians", "Endeavour", ""],
-      ["SSM", "Phantom Coin", ""],
+      ["Phoenix", "Bananas", "1:2"],
+      ["Heisenberg", "PlanetExpress", "2:0"],
+      ["Mandalorians", "Endeavour", "1:2"],
+      ["SSM", "Phantom Coin", "0:2"],
       ["Clippy", "Isotopes", ""],
     ],
   ],
@@ -107,7 +107,7 @@ export const group2: Group = [
   [
     "Week 2",
     [
-      ["Guardians of Galaxus", "Stellaris Pathfinders", ""],
+      ["Guardians of Galaxus", "Stellaris Pathfinders", "0:2"],
       ["Firefly", "Heimdall", "0:2"],
       ["MAPPIC", "Cyclops", "2:0"],
       ["SeaFire", "Enso", "2:0"],
@@ -117,11 +117,11 @@ export const group2: Group = [
   [
     "Week 3",
     [
-      ["Stellaris Pathfinders", "Heimdall", ""],
-      ["Guardians of Galaxus", "Cyclops", ""],
+      ["Stellaris Pathfinders", "Heimdall", "2:0"],
+      ["Guardians of Galaxus", "Cyclops", "2:1"],
       ["Firefly", "Enso", ""],
-      ["MAPPIC", "007", ""],
-      ["SeaFire", "Octopussy", ""],
+      ["MAPPIC", "007", "2:0"],
+      ["SeaFire", "Octopussy", "2:1"],
     ],
   ],
   [
@@ -210,10 +210,10 @@ export const group3: Group = [
   [
     "Week 3",
     [
-      ["Kassandra", "Skynet", ""],
-      ["AS Business Engineering", "Rivendell", ""],
+      ["Kassandra", "Skynet", "2:0"],
+      ["AS Business Engineering", "Rivendell", "0:2"],
       ["Bender & Fancy Bear!", "Funny Cats", "2:0"],
-      ["Blofeld", "Globefingers", ""],
+      ["Blofeld", "Globefingers", "2:1"],
       ["BREAK", "Ghostbusters", ""],
     ],
   ],
@@ -303,10 +303,10 @@ export const group4: Group = [
   [
     "Week 3",
     [
-      ["Skyfall", "BECS", ""],
-      ["Blackjack", "Don't Panic", ""],
+      ["Skyfall", "BECS", "2:0"],
+      ["Blackjack", "Don't Panic", "2:0"],
       ["Nucular", "The Rookies", ""],
-      ["Darwin", "Das Business", ""],
+      ["Darwin", "Das Business", "2:0"],
       ["BREAK", "Finity", ""],
     ],
   ],
