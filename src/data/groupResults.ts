@@ -316,7 +316,7 @@ export const group4: Group = [
       ["Don't Panic", "Skyfall", "0:2"],
       ["BECS", "Finity", ""],
       ["Blackjack", "The Rookies", ""],
-      ["Nucular", "Darwin", "2:0"],
+      ["Nucular", "Darwin", "0:2"],
       ["BREAK", "Das Business", ""],
     ],
   ],
