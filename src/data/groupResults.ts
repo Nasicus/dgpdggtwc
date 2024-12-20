@@ -18,7 +18,7 @@ export const group1: Group = [
       ["Mandalorians", "Bananas", "1:2"],
       ["SSM", "PlanetExpress", "1:2"],
       ["Clippy", "Endeavour", "2:0"],
-      ["Isotopes", "Phantom Coin", ""],
+      ["Isotopes", "Phantom Coin", "0:2"],
     ],
   ],
   [
@@ -119,7 +119,7 @@ export const group2: Group = [
     [
       ["Stellaris Pathfinders", "Heimdall", "2:0"],
       ["Guardians of Galaxus", "Cyclops", "2:1"],
-      ["Firefly", "Enso", ""],
+      ["Firefly", "Enso", "1:2"],
       ["MAPPIC", "007", "2:0"],
       ["SeaFire", "Octopussy", "2:1"],
     ],
@@ -222,7 +222,7 @@ export const group3: Group = [
     [
       ["Rivendell", "Kassandra", ""],
       ["Skynet", "Ghostbusters", ""],
-      ["AS Business Engineering", "Funny Cats", ""],
+      ["AS Business Engineering", "Funny Cats", "1:2"],
       ["Bender & Fancy Bear!", "Blofeld", ""],
       ["BREAK", "Globefingers", ""],
     ],
@@ -305,7 +305,7 @@ export const group4: Group = [
     [
       ["Skyfall", "BECS", "2:0"],
       ["Blackjack", "Don't Panic", "2:0"],
-      ["Nucular", "The Rookies", ""],
+      ["Nucular", "The Rookies", "2:1"],
       ["Darwin", "Das Business", "2:0"],
       ["BREAK", "Finity", ""],
     ],
@@ -313,10 +313,10 @@ export const group4: Group = [
   [
     "Week 4",
     [
-      ["Don't Panic", "Skyfall", ""],
+      ["Don't Panic", "Skyfall", "0:2"],
       ["BECS", "Finity", ""],
       ["Blackjack", "The Rookies", ""],
-      ["Nucular", "Darwin", ""],
+      ["Nucular", "Darwin", "2:0"],
       ["BREAK", "Das Business", ""],
     ],
   ],
