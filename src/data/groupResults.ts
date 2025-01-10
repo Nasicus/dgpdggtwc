@@ -34,11 +34,11 @@ export const group1: Group = [
   [
     "Week 4",
     [
-      ["PlanetExpress", "Phoenix", ""],
-      ["Bananas", "Endeavour", ""],
-      ["Heisenberg", "Phantom Coin", ""],
-      ["Mandalorians", "Isotopes", ""],
-      ["SSM", "Clippy", ""],
+      ["PlanetExpress", "Phoenix", "0:2"],
+      ["Bananas", "Endeavour", "2:0"],
+      ["Heisenberg", "Phantom Coin", "0:2"],
+      ["Mandalorians", "Isotopes", "1:2"],
+      ["SSM", "Clippy", "0:2"],
     ],
   ],
   [
@@ -127,11 +127,11 @@ export const group2: Group = [
   [
     "Week 4",
     [
-      ["Cyclops", "Stellaris Pathfinders", ""],
-      ["Heimdall", "Enso", ""],
+      ["Cyclops", "Stellaris Pathfinders", "1:2"],
+      ["Heimdall", "Enso", "2:0"],
       ["Guardians of Galaxus", "007", ""],
-      ["Firefly", "Octopussy", ""],
-      ["MAPPIC", "SeaFire", ""],
+      ["Firefly", "Octopussy", "2:0"],
+      ["MAPPIC", "SeaFire", "1:2"],
     ],
   ],
   [
@@ -220,10 +220,10 @@ export const group3: Group = [
   [
     "Week 4",
     [
-      ["Rivendell", "Kassandra", ""],
-      ["Skynet", "Ghostbusters", ""],
+      ["Rivendell", "Kassandra", "0:2"],
+      ["Skynet", "Ghostbusters", "2:1"],
       ["AS Business Engineering", "Funny Cats", "1:2"],
-      ["Bender & Fancy Bear!", "Blofeld", ""],
+      ["Bender & Fancy Bear!", "Blofeld", "2:0"],
       ["BREAK", "Globefingers", ""],
     ],
   ],
@@ -314,8 +314,8 @@ export const group4: Group = [
     "Week 4",
     [
       ["Don't Panic", "Skyfall", "0:2"],
-      ["BECS", "Finity", ""],
-      ["Blackjack", "The Rookies", ""],
+      ["BECS", "Finity", "2:1"],
+      ["Blackjack", "The Rookies", "1:2"],
       ["Nucular", "Darwin", "0:2"],
       ["BREAK", "Das Business", ""],
     ],
