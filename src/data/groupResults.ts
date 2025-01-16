@@ -28,7 +28,7 @@ export const group1: Group = [
       ["Heisenberg", "PlanetExpress", "2:0"],
       ["Mandalorians", "Endeavour", "1:2"],
       ["SSM", "Phantom Coin", "0:2"],
-      ["Clippy", "Isotopes", ""],
+      ["Clippy", "Isotopes", "2:0"],
     ],
   ],
   [
@@ -44,11 +44,11 @@ export const group1: Group = [
   [
     "Week 5",
     [
-      ["Phoenix", "Endeavour", ""],
-      ["PlanetExpress", "Phantom Coin", ""],
+      ["Phoenix", "Endeavour", "2:0"],
+      ["PlanetExpress", "Phantom Coin", "2:1"],
       ["Bananas", "Isotopes", ""],
-      ["Heisenberg", "Clippy", ""],
-      ["Mandalorians", "SSM", ""],
+      ["Heisenberg", "Clippy", "0:2"],
+      ["Mandalorians", "SSM", "0:2"],
     ],
   ],
   [
@@ -129,7 +129,7 @@ export const group2: Group = [
     [
       ["Cyclops", "Stellaris Pathfinders", "1:2"],
       ["Heimdall", "Enso", "2:0"],
-      ["Guardians of Galaxus", "007", ""],
+      ["Guardians of Galaxus", "007", "0:2"],
       ["Firefly", "Octopussy", "2:0"],
       ["MAPPIC", "SeaFire", "1:2"],
     ],
@@ -137,11 +137,11 @@ export const group2: Group = [
   [
     "Week 5",
     [
-      ["Stellaris Pathfinders", "Enso", ""],
+      ["Stellaris Pathfinders", "Enso", "2:1"],
       ["Cyclops", "007", ""],
-      ["Heimdall", "Octopussy", ""],
-      ["Guardians of Galaxus", "SeaFire", ""],
-      ["Firefly", "MAPPIC", ""],
+      ["Heimdall", "Octopussy", "0:2"],
+      ["Guardians of Galaxus", "SeaFire", "0:2"],
+      ["Firefly", "MAPPIC", "0:2"],
     ],
   ],
   [
@@ -231,9 +231,9 @@ export const group3: Group = [
     "Week 5",
     [
       ["Kassandra", "Ghostbusters", ""],
-      ["Rivendell", "Funny Cats", ""],
-      ["Skynet", "Globefingers", ""],
-      ["AS Business Engineering", "Blofeld", ""],
+      ["Rivendell", "Funny Cats", "2:0"],
+      ["Skynet", "Globefingers", "1:2"],
+      ["AS Business Engineering", "Blofeld", "0:2"],
       ["BREAK", "Bender & Fancy Bear!", ""],
     ],
   ],
@@ -323,10 +323,10 @@ export const group4: Group = [
   [
     "Week 5",
     [
-      ["Skyfall", "Finity", ""],
-      ["Don't Panic", "The Rookies", ""],
-      ["BECS", "Das Business", ""],
-      ["Blackjack", "Darwin", ""],
+      ["Skyfall", "Finity", "2:0"],
+      ["Don't Panic", "The Rookies", "1:2"],
+      ["BECS", "Das Business", "2:0"],
+      ["Blackjack", "Darwin", "0:2"],
       ["BREAK", "Nucular", ""],
     ],
   ],
