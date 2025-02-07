@@ -74,11 +74,11 @@ export const group1: Group = [
   [
     "Week 8",
     [
-      ["Clippy", "Phoenix", ""],
-      ["Isotopes", "SSM", ""],
-      ["Phantom Coin", "Mandalorians", ""],
+      ["Clippy", "Phoenix", "2:0"],
+      ["Isotopes", "SSM", "2:0"],
+      ["Phantom Coin", "Mandalorians", "0:2"],
       ["Endeavour", "Heisenberg", ""],
-      ["PlanetExpress", "Bananas", ""],
+      ["PlanetExpress", "Bananas", "2:0"],
     ],
   ],
   [
@@ -151,14 +151,14 @@ export const group2: Group = [
       ["Enso", "Octopussy", "0:2"],
       ["Cyclops", "SeaFire", "0:2"],
       ["Heimdall", "MAPPIC", "2:1"],
-      ["Guardians of Galaxus", "Firefly", ""],
+      ["Guardians of Galaxus", "Firefly", "0:2"],
     ],
   ],
   [
     "Week 7",
     [
       ["Stellaris Pathfinders", "Octopussy", "2:1"],
-      ["007", "SeaFire", ""],
+      ["007", "SeaFire", "1:2"],
       ["Enso", "MAPPIC", "0:2"],
       ["Cyclops", "Firefly", "0:2"],
       ["Heimdall", "Guardians of Galaxus", "2:1"],
@@ -167,11 +167,11 @@ export const group2: Group = [
   [
     "Week 8",
     [
-      ["SeaFire", "Stellaris Pathfinders", ""],
-      ["Octopussy", "MAPPIC", ""],
+      ["SeaFire", "Stellaris Pathfinders", "2:0"],
+      ["Octopussy", "MAPPIC", "2:1"],
       ["007", "Firefly", ""],
-      ["Enso", "Guardians of Galaxus", ""],
-      ["Cyclops", "Heimdall", ""],
+      ["Enso", "Guardians of Galaxus", "1:2"],
+      ["Cyclops", "Heimdall", "1:2"],
     ],
   ],
   [
@@ -252,7 +252,7 @@ export const group3: Group = [
     [
       ["Kassandra", "Globefingers", "2:1"],
       ["Funny Cats", "Blofeld", "0:2"],
-      ["Ghostbusters", "Bender & Fancy Bear!", ""],
+      ["Ghostbusters", "Bender & Fancy Bear!", "0:2"],
       ["Skynet", "AS Business Engineering", "1:2"],
       ["BREAK", "Rivendell", ""],
     ],
@@ -260,10 +260,10 @@ export const group3: Group = [
   [
     "Week 8",
     [
-      ["Blofeld", "Kassandra", ""],
+      ["Blofeld", "Kassandra", "0:2"],
       ["Globefingers", "Bender & Fancy Bear!", ""],
-      ["Ghostbusters", "AS Business Engineering", ""],
-      ["Rivendell", "Skynet", ""],
+      ["Ghostbusters", "AS Business Engineering", "2:0"],
+      ["Rivendell", "Skynet", "2:0"],
       ["BREAK", "Funny Cats", ""],
     ],
   ],
@@ -343,7 +343,7 @@ export const group4: Group = [
   [
     "Week 7",
     [
-      ["Skyfall", "Das Business", ""],
+      ["Skyfall", "Das Business", "2:0"],
       ["The Rookies", "Darwin", "0:2"],
       ["Finity", "Nucular", "2:1"],
       ["BECS", "Blackjack", "0:2"],
@@ -353,10 +353,10 @@ export const group4: Group = [
   [
     "Week 8",
     [
-      ["Darwin", "Skyfall", ""],
-      ["Das Business", "Nucular", ""],
-      ["Finity", "Blackjack", ""],
-      ["Don't Panic", "BECS", ""],
+      ["Darwin", "Skyfall", "0:2"],
+      ["Das Business", "Nucular", "1:2"],
+      ["Finity", "Blackjack", "0:2"],
+      ["Don't Panic", "BECS", "0:2"],
       ["BREAK", "The Rookies", ""],
     ],
   ],
