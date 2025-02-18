@@ -88,7 +88,7 @@ export const group1: Group = [
       ["Clippy", "Mandalorians", "2:0"],
       ["Isotopes", "Heisenberg", "2:1"],
       ["Phantom Coin", "Bananas", "0:2"],
-      ["Endeavour", "PlanetExpress", ""],
+      ["Endeavour", "PlanetExpress", "f:0"],
     ],
   ],
 ];
@@ -273,7 +273,7 @@ export const group3: Group = [
       ["Kassandra", "Bender & Fancy Bear!", "0:2"],
       ["Globefingers", "AS Business Engineering", "1:2"],
       ["Funny Cats", "Skynet", "f:0"],
-      ["Ghostbusters", "Rivendell", ""],
+      ["Ghostbusters", "Rivendell", "2:1"],
       ["BREAK", "Blofeld", ""],
     ],
   ],
